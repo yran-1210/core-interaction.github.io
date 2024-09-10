@@ -2,17 +2,18 @@
 <html>
 <head>
 
-<title> <strong>Yiran Wang</title> <strong>
-<head>
+<title> <strong>Yiran Wang </strong> </title>
+</head>
 
 
 <body>
 <h1>Hi, everyone. This is my first webpage;)</h1>
 <p>i'm tring to study coding </p>
-  <em> "Live as if you were to die tomorrow. Learn as if you were to live forever." </em> – Mahatma Gandhi 
+  <em> "Live as if you were to die tomorrow. Learn as if you were to live forever." </em> – <mark> Mahatma Gandhi </mark>
   
 <hr>
-<a href="https://www.awwwards.com/inspiration/audio-reactive-visual-intrusion-voices-of-alice" title=”One of the inspirational web design pages”>
+<a href="https://www.awwwards.com/inspiration/audio-reactive-visual-intrusion-voices-of-alice"
+  title=”One of the inspirational web design pages”>
 <br>
   
   <p>some ramdoms</p>
@@ -21,7 +22,7 @@
   <li>=U </li>
   <li> >o< </li>
   <li> zzZ </li>
-  </ul> 
+  </ul>
     
 </body>
 </html>
