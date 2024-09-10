@@ -15,7 +15,7 @@
 <a href="https://www.awwwards.com/inspiration/audio-reactive-visual-intrusion-voices-of-alice" >
   title=”One of the inspirational web design pages”>
 
-  <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+  <a href="https://www.awwwards.com/inspiration/audio-reactive-visual-intrusion-voices-of-alice/" target="_blank">Visit an inspirational web design page!</a>
 <br>
  
   <ul>
