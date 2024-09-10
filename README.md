@@ -12,7 +12,7 @@
   <em> "Live as if you were to die tomorrow. Learn as if you were to live forever." </em> – <mark> Mahatma Gandhi </mark>
   
 <hr>
-<a href="https://www.awwwards.com/inspiration/audio-reactive-visual-intrusion-voices-of-alice" > </a>
+<a href="https://www.awwwards.com/inspiration/audio-reactive-visual-intrusion-voices-of-alice" >
   title=”One of the inspirational web design pages”>
 <br>
  
