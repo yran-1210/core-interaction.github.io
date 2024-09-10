@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<title> <strong>Yiran Wang </strong> </title>
+<strong>Yiran Wang </strong> 
 </head>
 
 
@@ -16,7 +16,7 @@
   title=”One of the inspirational web design pages”>
 <br>
   
-  <p>some ramdoms</p>
+ 
   <ul>
   <li>;) </li>
   <li>=U </li>
