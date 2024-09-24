@@ -1,18 +1,35 @@
 
 h1 { 
-  color: {7C001F}; 
+  color: #7C001F; 
   background-color: transparent; 
   font-size: 50px; 
   padding: 10px; 
-  font-family: 'Times New Roman'; 
+  font-family: 'Arial'; 
   font-weight: bold;
   }
+  
+  .T1 { 
+    color: black; 
+    background-color: Grey; 
+    font-size: 50px; 
+    padding: 10px; 
+    font-family: 'Times New Roman'; 
+    font-weight: bold;
+    text-align:center;
+    }
 
-t1 { 
-  color: {7C001F}; 
-  background-color: transparent; 
-  font-size: 100px; 
-  padding: 10px; 
-  font-family: 'Times New Roman'; 
-  font-weight: bold;
-  }
+    .button {
+      background-color: grey;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    body {
+      background-image: url("IMG_6031.JPG");
+    }
+
