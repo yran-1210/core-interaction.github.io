@@ -7,3 +7,12 @@ h1 {
   font-family: 'Times New Roman'; 
   font-weight: bold;
   }
+
+t1 { 
+  color: {7C001F}; 
+  background-color: transparent; 
+  font-size: 100px; 
+  padding: 10px; 
+  font-family: 'Times New Roman'; 
+  font-weight: bold;
+  }
