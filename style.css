@@ -19,7 +19,7 @@ h1 {
     }
 
     .button {
-      background-color: grey;
+      background-color: transparent;
       border: none;
       color: white;
       padding: 15px 32px;
