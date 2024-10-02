@@ -9,11 +9,11 @@ h1 {
   }
   
   .T1 { 
-    color: white; 
-    background-color: Grey; 
+    color: rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 0); 
     font-size: 50px; 
     padding: 10px; 
-    font-family: 'Times New Roman'; 
+    font-family: 'arial'; 
     font-weight: bold;
     text-align:center;
     }
@@ -32,4 +32,5 @@ h1 {
     body {
       background-image: url("IMG_6031.JPG");
     }
+
 
