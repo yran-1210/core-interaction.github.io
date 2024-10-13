@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            overflow-x: auto; /* 允许水平滚动 */
+            justify-content: center; /* 居中对齐 */
+            gap: 10px; /* 图片之间的间距 */
+        }
+        .gallery img {
+            width: 200px; /* 图片宽度 */
+            height: 200px; /* 图片高度 */
+            object-fit: cover; /* 保持图片比例 */
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="gallery">
+        <img src="brooklyn.jpg" alt="Image 1">
+        <img src="newyork.JPG" alt="Image 2">
+        <img src="DSCF3206-2 copy.jpg" alt="Image 3">
+        <img src="clocktower1.jpg" alt="Image 4">
+        <img src="Red-brick art gallery.jpg" alt="Image 5">
+    </center>
+    </div>
+</body>
+</html>
