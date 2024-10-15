@@ -23,3 +23,6 @@ body, html {
     transition: all 1s ease;
     filter: blur(0);
 }
+img {
+    width: 100vw;
+}

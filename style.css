@@ -1,0 +1,27 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+.image-wrapper {
+ width: 100%;
+ display: flex;
+ margin-top: 80px;
+}
+
+.image-wrapper a {
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.image-wrapper img {
+ max-width: 100%;
+}
+
+.image-wrapper img:hover {
+ transform: scale(1.2);
+}
