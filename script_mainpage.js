@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     const paragraphElement = document.getElementById("paragraph");
-    const text = "This is a sample paragraph that will appear word by word.";
-    const words = text.split(" ");
-    let currentWordIndex = 0;
+    const text = "We invite you to explore the world through a shifting lens of perception, where culture, technology, and time collide.";
+    let currentCharIndex = 0;
   
-    function displayWordByWord() {
-      if (currentWordIndex < words.length) {
-        paragraphElement.innerHTML += words[currentWordIndex] + " ";
-        currentWordIndex++;
-        setTimeout(displayWordByWord, 500); // Adjust the delay (500ms) as needed
+    function displayLetterByLetter() {
+      if (currentCharIndex < text.length) {
+        paragraphElement.innerHTML += text[currentCharIndex];
+        currentCharIndex++;
+        setTimeout(displayLetterByLetter, 100); // 每个字母出现的间隔时间（100ms，可根据需要调整）
       }
     }
   
     paragraphElement.style.visibility = "visible";
-    displayWordByWord();
+    displayLetterByLetter();
   });
