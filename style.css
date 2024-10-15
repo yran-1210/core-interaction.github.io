@@ -1,37 +1,33 @@
-
-h1 { 
-  color: #161713; 
-  background-color: transparent; 
-  font-size: 50px; 
-  padding: 10px; 
-  font-family: 'Arial'; 
+h1 {
+  color: #161713;
+  background-color: transparent;
+  font-size: 50px;
+  padding: 10px;
+  font-family: "Arial";
   font-weight: bold;
-  }
-  
-  .T1 { 
-    color: AF997F); 
-    background-color: rgb(0, 0, 0); 
-    font-size: 50px; 
-    padding: 10px; 
-    font-family: 'arial'; 
-    font-weight: bold;
-    text-align:center;
-    }
+}
 
-    .button {
-      background-color: transparent;
-      border: none;
-      color: #CECBC8;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-    }
+.T1 {
+  color: #af997f;
+  background-color: rgb(0, 0, 0);
+  font-size: 50px;
+  padding: 10px;
+  font-family: "arial";
+  font-weight: bold;
+  text-align: center;
+}
 
- 
-      body {background-color: rgb(236, 237, 239);}
+.button {
+  background-color: transparent;
+  border: none;
+  color: #cecbc8;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
 
-    
-
-
+body {
+  background-color: rgb(236, 237, 239);
+}
