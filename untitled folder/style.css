@@ -1,0 +1,33 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ overflow: hidden;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.image-wrapper {
+ width: 100%;
+ display: flex;
+}
+
+.image-wrapper a {
+ flex: 1;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.image-wrapper img {
+ max-width: 100%;
+}
+
+.image-wrapper img:hover {
+ transform: scale(1.2);
+}
