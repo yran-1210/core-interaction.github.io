@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (currentCharIndex < text.length) {
         paragraphElement.innerHTML += text[currentCharIndex];
         currentCharIndex++;
-        setTimeout(displayLetterByLetter, 100); // 每个字母出现的间隔时间（100ms，可根据需要调整）
+        setTimeout(displayLetterByLetter, 10); // 每个字母出现的间隔时间（100ms，可根据需要调整）
       }
     }
   
