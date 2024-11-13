@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.carousel-wrapper {
+    width: 60%; /* 根据需要调整宽度 */
+    overflow: hidden;
+    margin: 50px auto;
+    /*border-radius: 10px;*/
+}
+
+.carousel {
+    display: flex;
+    width: calc(100% + 100px); /* 多加一个图片的宽度来实现无限滚动 */
+    animation: scroll 10s linear infinite;
+}
+
+.carousel-item {
+    flex: 0 0 25%; /* 每个图片占容器的 25% 宽度，即 4 张图片能同时显示 */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    /*border-radius: 10px;*/
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.content{
+    width: 100vw;
+    min-height: 100vh;
+    background: #ADACA8;
+    padding: 20px 0;
+    color: #37372F;
+}
+.text{
+    text-align: center;
+    font-family: Calibri;
+}
+h1{
+    text-align: center;
+    margin: 40px 0;
+}
+.text a{
+    text-align: center;
+    font-family: Calibri;
+}
