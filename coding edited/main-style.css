@@ -1,82 +1,84 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    text-transform: uppercase;
-    background-color: black;
-    color: white;
-    overflow: hidden;
-    height: 100vh;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
 }
 
 /* Background for CD Player */
 body {
-    background-image: url('your-cd-image.jpg'); /* Insert your image here */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("your-cd-image.jpg"); /* Insert your image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Container for Entries */
 .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 /* Main Entry Styling */
 .main-entry {
-    position: absolute;
-    text-align: center;
-    padding: 20px 40px;
-    font-size: 24px;
-    border: 2px solid white;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  position: absolute;
+  text-align: center;
+  padding: 20px 40px;
+  font-size: 24px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 /* Entry Links Styling */
 .entry {
-    position: absolute;
-    font-size: 18px;
-    padding: 10px 20px;
-    text-align: center;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: transform 0.2s ease, background-color 0.3s ease;
+  position: absolute;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 /* Hover Effects */
-.main-entry:hover, .entry:hover {
-    background-color: white;
-    color: black;
-    transform: scale(1.1);
+.main-entry:hover,
+.entry:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
 }
 
 /* Entry Specific Positions */
 .entry1 {
-    top: 10%;
-    left: 20%;
+  top: 10%;
+  left: 20%;
 }
 .entry2 {
-    top: 10%;
-    right: 20%;
+  top: 10%;
+  right: 20%;
 }
 .entry3 {
-    bottom: 10%;
-    left: 20%;
+  bottom: 10%;
+  left: 20%;
 }
 .entry4 {
-    bottom: 10%;
-    right: 20%;
+  bottom: 10%;
+  right: 20%;
 }
 
 body {
-    background-image: url('your-cd-image.jpg'); /* Insert your image here */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("your-cd-image.jpg"); /* Insert your image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
