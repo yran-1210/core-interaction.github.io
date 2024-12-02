@@ -1,99 +1,103 @@
 /* General Reset */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
-  overflow-x: hidden;
-}
-
-/* Back to Home Link */
-.back-to-home {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  z-index: 100;
-}
-
-.back-to-home a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  background: #333;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background 0.3s ease;
-}
-
-.back-to-home a:hover {
-  background: #555;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; /* Keep black background */
+    color: white; /* Default text color */
+    overflow-x: hidden;
 }
 
 /* Title Styling */
 h1 {
-  text-align: center;
-  font-size: 50px;
-  margin: 20px 0;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px white; /* Create hollow text effect */
+}
+
+/* Back to Home Link */
+.back-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-to-home a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white; /* White text */
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid white; /* Border for a cleaner look */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.back-to-home a:hover {
+    background: white; /* Hover effect */
+    color: black;
 }
 
 /* Carousel Wrapper */
 .carousel-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  height: 400px;
-  margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hides overflowing items */
+    width: 100%;
+    height: 400px; /* Fixed height */
+    margin: auto;
+    position: relative;
 }
 
 /* Carousel */
 .carousel {
-  display: flex;
-  animation: slide 10s infinite;
+    display: flex; /* Align items in a row */
+    animation: scroll-carousel 15s linear infinite; /* Smooth infinite scrolling */
+    transition: transform 0.3s ease; /* For interaction */
 }
 
 /* Carousel Items */
 .carousel-item {
-  flex: 0 0 100%;
-  text-align: center;
+    flex: 0 0 20%; /* Each item takes up 20% of the carousel width */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease; /* For hover effect */
 }
 
 .carousel-item img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 0 auto;
+    width: 250px; /* Updated size for the album */
+    height: 250px; /* Same height for uniformity */
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+    border-radius: 10px;
+    margin: auto;
 }
 
 .carousel-item p {
-  font-size: 18px;
-  margin-top: 10px;
-  font-weight: bold;
+    font-size: 16px; /* Text below the album */
+    margin-top: 10px;
+    font-weight: bold;
+    color: white; /* White text for titles */
 }
 
-/* Keyframes for Auto-Sliding */
-@keyframes slide {
-  0%,
-  20% {
-    transform: translateX(0);
-  }
-  25%,
-  45% {
-    transform: translateX(-100%);
-  }
-  50%,
-  70% {
-    transform: translateX(-200%);
-  }
-  75%,
-  95% {
-    transform: translateX(-300%);
-  }
-  100% {
-    transform: translateX(-400%);
-  }
+/* Hover Effects */
+.carousel-item:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.carousel:hover {
+    animation-play-state: paused; /* Pause animation when hovering over the carousel */
+}
+
+/* Infinite Scrolling Animation */
+@keyframes scroll-carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-120%); /* Smoothly move left */
+    }
 }

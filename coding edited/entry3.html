@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-entry3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>CD Player</title>
+    <style>
+      [type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+        outline: 0;
+        background-color: transparent;
+        width: 500px;
+      }
+      [type="range"]::-webkit-slider-runnable-track {
+        height: 8px;
+        background: #e6e6e6;
+      }
+      [type="range" i]::-webkit-slider-container {
+        height: 20px;
+        overflow: hidden;
+      }
+      [type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: rgb(207, 203, 200);
+        border: 1px solid transparent;
+        margin-top: -6px;
+        border-image: linear-gradient(grey, grey) 0 fill / 8 20 8 0 / 0px 0px 0
+          1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cd-player">
+      <!-- CD Image Box -->
+      <div class="cd-box">
+        <img alt="cd" class="cd" />
+      </div>
+      <!-- Play/Pause Button -->
+      <div class="play-pause-container">
+        <i class="fa-solid fa-play icon"></i>
+      </div>
+      <!-- Music Slider -->
+      <input type="range" id="music-slider" />
+    </div>
+    <audio id="music"></audio>
+    <script src="script-entry3.js"></script>
+  </body>
+</html>
