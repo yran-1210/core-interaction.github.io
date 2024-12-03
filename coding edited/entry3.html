@@ -13,14 +13,14 @@
   <body>
     <!-- Navigation -->
     <div class="navigation">
-      <a href="entry2.html">Back</a>
-      <a href="entry1.html">Home</a>
+      <a href="entry2.html" class="nav-button">Back</a>
+      <a href="entry1.html" class="nav-button">Home</a>
     </div>
 
     <div class="cd-player">
       <!-- CD Image Box -->
       <div class="cd-box">
-        <img alt="cd" class="cd" />
+        <img src="cd-image.jpg" alt="cd" class="cd" />
       </div>
 
       <!-- Play/Pause Button -->
@@ -36,18 +36,5 @@
     </div>
     <audio id="music"></audio>
     <script src="script-entry3.js"></script>
-    <script>
-      // Fetch the ID from the query parameters
-      const urlParams = new URLSearchParams(window.location.search);
-      const id = urlParams.get("id");
-
-      // Set the href dynamically for the Lyrics Button
-      const lyricsButton = document.getElementById("lyrics-button");
-      if (id) {
-        lyricsButton.href = `entry4.html?id=${id}`;
-      } else {
-        lyricsButton.href = "entry4.html"; // Default fallback
-      }
-    </script>
   </body>
 </html>

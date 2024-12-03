@@ -15,11 +15,12 @@ body {
   top: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align left */
+  gap: 20px; /* Add spacing between back and home */
   padding: 0 40px; /* Add padding for left and right */
 }
 
-.navigation a {
+.nav-button {
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -27,12 +28,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.navigation a:hover {
+.nav-button:hover {
   color: #ddd;
-}
-
-.navigation a:last-child {
-  margin-right: 80px; /* Add margin to shift the Home link to the left */
 }
 
 /* CD Player Section */
@@ -63,32 +60,49 @@ body {
 
 /* Play/Pause Icon */
 .icon {
-  margin-top: 100px;
+  margin-top: 50px;
   font-size: 50px;
   color: rgb(255, 255, 255);
 }
 
 /* Music Slider */
 #music-slider {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 90vw;
+  height: 5px; /* Thinner progress bar */
+  background: white;
+  border-radius: 2.5px;
+  appearance: none;
+  outline: none;
 }
 
-/* Back Button */
-.buttons {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+#music-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%; /* Circle thumb */
+  cursor: pointer;
 }
 
-.button {
-  text-decoration: none;
+#music-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Lyrics Button */
+.lyrics-button {
+  margin-top: 30px;
   font-size: 18px;
+  text-decoration: none;
   color: white;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.button:hover {
-  color: #cccccc; 
+.lyrics-button:hover {
+  color: #ddd;
 }

@@ -5,6 +5,7 @@ body {
   background-color: black;
   color: white;
 }
+
 /* Title Styling */
 h1 {
   position: fixed; /* Fix the title position */
@@ -21,7 +22,7 @@ h1 {
 .buttons {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 40px; /* Add margin for alignment */
 }
 
 .button {
@@ -33,17 +34,28 @@ h1 {
 }
 
 .button:hover {
-  color: #cccccc; 
+  color: #cccccc;
 }
 
-/* Container Layout */
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Home Page Button */
+.home-page {
+  position: absolute;
+  top: 20px;
+  right: 40px; /* Add margin for alignment */
 }
+
+.home-page a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.home-page a:hover {
+  color: #cccccc;
+}
+
 /* Container Layout */
 .container {
   background-color: rgb(0, 0, 0);
@@ -57,18 +69,21 @@ body {
   padding: 20px;
 }
 
+/* Cover Item */
 .cover-item {
   width: 150px;
   height: 150px;
   margin: 50px;
   cursor: pointer;
 }
+
 .img1 {
   position: absolute;
   width: 150px;
   height: 150px;
   box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.3);
 }
+
 .img2 {
   position: absolute;
   width: 140px;
@@ -119,23 +134,3 @@ body {
   font-style: italic;
   color: white;
 }
-
-.home-page {
-    text-align: center; /* 中心对齐文本 */
-    position: relative; /* 使用页面流动定位 */
-    margin-top: 20px; /* 调整与专辑网格的间距 */
-  }
-  
-  .home-page a {
-    text-decoration: none; /* 去掉下划线 */
-    font-size: 16px; /* 设置字体大小 */
-    color: rgb(255, 255, 255); /* 文本颜色 */
-    padding: 0; /* 去掉内边距 */
-    background-color: transparent; /* 透明背景 */
-    transition: color 0.3s ease; /* 仅调整颜色过渡 */
-  }
-  
-  .home-page a:hover {
-    color: rgb(200, 200, 200); /* 悬停时稍微改变颜色 */
-  }
-  
