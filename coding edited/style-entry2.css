@@ -17,28 +17,23 @@ h1 {
   margin: 50px 0 20px;
 }
 
-/* Buttons Styling */
+/* Back Button */
 .buttons {
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
 }
 
 .button {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
-  padding: 10px 20px;
-  background: transparent;
-  transition: all 0.3s ease;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .button:hover {
-  background: white;
-  color: black;
+  color: #cccccc; 
 }
 
 /* Container Layout */

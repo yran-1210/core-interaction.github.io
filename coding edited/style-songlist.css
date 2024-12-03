@@ -24,7 +24,7 @@ body, html {
 }
 
 .back-button a:hover {
-    color: #cccccc; /* Slightly lighter color on hover */
+    color: #cccccc; 
 }
 
 /* Container Styling */

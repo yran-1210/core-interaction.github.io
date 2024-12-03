@@ -74,18 +74,21 @@ body {
   width: 90vw;
 }
 
-/* Lyrics Button */
-.lyrics-button {
-  display: block;
-  text-align: center;
-  margin: 15px 0; /* Space between play button and slider */
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
+/* Back Button */
+.buttons {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.button {
   text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
-.lyrics-button:hover {
-  color: #ddd;
+.button:hover {
+  color: #cccccc; 
 }

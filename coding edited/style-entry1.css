@@ -3,8 +3,8 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Keep black background */
-    color: white; /* Default text color */
+    background-color: black;
+    color: white;
     overflow-x: hidden;
 }
 
@@ -15,7 +15,7 @@ h1 {
     margin: 50px 0;
     font-weight: 700;
     color: transparent;
-    -webkit-text-stroke: 1px white; /* Create hollow text effect */
+    -webkit-text-stroke: 1px white;
 }
 
 /* Back to Home Link */
@@ -28,17 +28,27 @@ h1 {
 .back-to-home a {
     text-decoration: none;
     font-size: 16px;
-    color: white; /* White text */
+    color: white;
     padding: 10px 20px;
     background: transparent;
-    border: 1px solid white; /* Border for a cleaner look */
+    border: 1px solid white;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .back-to-home a:hover {
-    background: white; /* Hover effect */
+    background: white;
     color: black;
+}
+
+/* Carousel Container */
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
 }
 
 /* Carousel Wrapper */
@@ -46,53 +56,51 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Hides overflowing items */
-    width: 100%; /* Takes full width */
-    height: 400px; /* Fixed height */
-    margin: auto;
+    width: 100%;
+    overflow: hidden;
     position: relative;
 }
 
 /* Carousel */
 .carousel {
-    display: flex; /* Align items in a row */
-    animation: scroll-carousel 15s linear infinite; /* Smooth infinite scrolling */
-    transition: transform 0.3s ease; /* For interaction */
+    display: flex;
+    gap: 20px; /* Maintain proper spacing */
+    animation: scroll-carousel 15s linear infinite;
+    transition: transform 0.3s ease;
 }
 
 /* Carousel Items */
 .carousel-item {
-    flex: 0 0 25%; /* Adjusted to fit 4 items evenly across the carousel */
+    flex: 0 0 auto; /* Auto-resize */
     text-align: center;
-    padding: 20px;
-    transition: transform 0.3s ease; /* For hover effect */
+    padding: 10px;
+    transition: transform 0.3s ease;
 }
 
-/* Insert your images in the HTML, inside <div class="carousel-item"> blocks */
-
+/* Album Images */
 .carousel-item img {
-    width: 250px; /* Updated size for the album */
-    height: 250px; /* Same height for uniformity */
-    object-fit: cover; /* Ensure images maintain aspect ratio */
+    width: 300px; /* Larger album size */
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
     margin: auto;
 }
 
-/* Text below each album */
+/* Album Titles */
 .carousel-item p {
-    font-size: 16px; /* Text below the album */
+    font-size: 16px; /* Adjust font size for consistency */
     margin-top: 10px;
     font-weight: bold;
-    color: white; /* White text for titles */
+    color: white;
 }
 
 /* Hover Effects */
 .carousel-item:hover {
-    transform: scale(1.1); /* Zoom effect on hover */
+    transform: scale(1.1);
 }
 
 .carousel:hover {
-    animation-play-state: paused; /* Pause animation when hovering over the carousel */
+    animation-play-state: paused;
 }
 
 /* Infinite Scrolling Animation */
@@ -101,6 +109,20 @@ h1 {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-120%); /* Smoothly move left */
+        transform: translateX(-100%);
     }
+}
+
+/* Melody GIF Styling */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
