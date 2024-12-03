@@ -47,7 +47,7 @@ h1 {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Hides overflowing items */
-    width: 100%;
+    width: 100%; /* Takes full width */
     height: 400px; /* Fixed height */
     margin: auto;
     position: relative;
@@ -62,11 +62,13 @@ h1 {
 
 /* Carousel Items */
 .carousel-item {
-    flex: 0 0 20%; /* Each item takes up 20% of the carousel width */
+    flex: 0 0 25%; /* Adjusted to fit 4 items evenly across the carousel */
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease; /* For hover effect */
 }
+
+/* Insert your images in the HTML, inside <div class="carousel-item"> blocks */
 
 .carousel-item img {
     width: 250px; /* Updated size for the album */
@@ -76,6 +78,7 @@ h1 {
     margin: auto;
 }
 
+/* Text below each album */
 .carousel-item p {
     font-size: 16px; /* Text below the album */
     margin-top: 10px;

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entry 6</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        line-height: 1.6;
+      }
+
+      /* Back Button */
+      .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .back-button:hover {
+        color: #ddd;
+      }
+
+      /* Home Button */
+      .home-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .home-button:hover {
+        color: #ddd;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 100px auto 0; /* 增加顶部与 Back 和 Home 的距离 */
+        padding: 20px;
+      }
+
+      .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 80px; /* 增加段落之间的间距 */
+      }
+
+      .text-content {
+        width: 50%;
+        padding-right: 20px;
+      }
+
+      .image-content {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-content img {
+        max-width: 100%;
+        border-radius: 0px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .recommended-songs {
+        margin-top: 50px;
+      }
+
+      .recommended-songs ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .recommended-songs li {
+        margin-bottom: 15px;
+      }
+
+      .recommended-songs li strong {
+        color: #ffd700; /* Gold color for song title */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Back Button -->
+    <a href="entry5.html" class="back-button">←</a>
+
+    <!-- Home Button -->
+    <a href="entry1.html" class="home-button">Home</a>
+
+    <div class="container">
+      <!-- Section 1: Introduction -->
+      <div class="section">
+        <div class="text-content">
+          <h1>Young Dan (Huichundan)</h1>
+          <p>
+            Young Dan (Huichundan) is an independent rock band from Guangxi,
+            China, formed in 2016. The band consists of lead vocalist and
+            guitarist Simon Liu, bassist Zequn Guo, drummer Dan Jian, and
+            guitarist Gaofei Wei. Their music blends indie rock, psychedelic
+            rock, post-punk, and disco elements, characterized by catchy guitar
+            riffs, retro beats, and Simon's distinctive vocals. Drawing
+            inspiration from everyday life, Young Dan’s songs are heartfelt and
+            introspective.
+          </p>
+        </div>
+        <div class="image-content">
+          <img src="assets6/109951168835236514.jpg" alt="Young Dan Band" />
+        </div>
+      </div>
+
+      <!-- Section 2: Recommended Songs -->
+      <div class="section">
+        <div class="image-content">
+          <img src="assets6/084c609c3ae846068f4b8c2c18a9798b.jpg" alt="Young Dan Album" />
+        </div>
+        <div class="text-content recommended-songs">
+          <h2>Recommended Songs</h2>
+          <ul>
+            <li>
+              <strong>Flowers</strong> (鲜花): This song gained widespread
+              attention after the band's performance on the music show
+              <em>The Big Band (Season 3)</em> in 2023, quickly going viral on
+              social media.
+            </li>
+            <li>
+              <strong>Emily</strong> (艾蜜莉): Released as a single in 2020,
+              "Emily" showcases the band's distinctive style and has become a
+              fan favorite.
+            </li>
+            <li>
+              <strong>Justice</strong> (正义): Featured on their 2021 album
+              <em>Ear Ghost Out of Wind</em>, this track highlights their
+              unique musical approach.
+            </li>
+            <li>
+              <strong>First Love</strong> (初恋): This song has resonated with
+              many listeners, further establishing the band's presence in the
+              indie music scene.
+            </li>
+            <li>
+              <strong>Dream Especially Tender</strong> (梦特别娇): Another
+              notable track that exemplifies their musical versatility and has
+              been well-received by fans.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,36 +1,91 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  .cd-player {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    height: 100vh;
-    flex-direction: column;
-  }
-  .cd {
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    border-radius: 50%;
-  }
-  .cd-box {
-    width: 310px;
-    height: 310px;
-    background-color: #000000;
-    background-size: cover;
-    border-radius: 50%;
-  }
-  .icon {
-    margin-top: 100px;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-  }
-  #music-slider {
-    margin-top: 100px;
-    width: 90vw;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navigation {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px; /* Add padding for left and right */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #ddd;
+}
+
+.navigation a:last-child {
+  margin-right: 80px; /* Add margin to shift the Home link to the left */
+}
+
+/* CD Player Section */
+.cd-player {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  flex-direction: column;
+}
+
+.cd {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.cd-box {
+  width: 310px;
+  height: 310px;
+  background-color: #000000;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+/* Play/Pause Icon */
+.icon {
+  margin-top: 100px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+
+/* Music Slider */
+#music-slider {
+  margin-top: 100px;
+  width: 90vw;
+}
+
+/* Lyrics Button */
+.lyrics-button {
+  display: block;
+  text-align: center;
+  margin: 15px 0; /* Space between play button and slider */
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lyrics-button:hover {
+  color: #ddd;
+}

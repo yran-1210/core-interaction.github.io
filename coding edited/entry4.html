@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MV Page</title>
+    <style>
+      body {
+        margin: 20px; /* Add margin around the whole page */
+        padding: 0;
+        background-color: #000000;
+        font-family: Arial, sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 40px); /* Account for margin in height */
+      }
+      .navigation {
+        position: fixed;
+        top: 20px;
+        width: calc(100% - 40px); /* Account for body margin */
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+      .navigation a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      .navigation a:hover {
+        color: #ddd;
+      }
+      .content {
+        text-align: center;
+        margin-top: 100px; /* Adjust spacing from navigation */
+      }
+      .content a {
+        display: block;
+        margin-top: 20px; /* Add spacing between the two links */
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+      .content a:hover {
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation">
+      <a href="entry3.html?id=1">Back</a>
+      <a href="entry1.html">Home</a>
+    </div>
+
+    <div class="content">
+      <!-- MV Player link -->
+      <a id="mv-player-link" href="#" target="_blank" style="font-size: 24px;">
+        MV Player
+      </a>
+
+      <!-- Explore More link -->
+      <a id="explore-more-link" href="#">Explore More...</a>
+    </div>
+
+    <script>
+      // Get the query parameters from the URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const mvId = urlParams.get("id");
+
+      // Dynamically update MV Player link
+      const mvPlayerLink = document.getElementById("mv-player-link");
+      if (mvId) {
+        mvPlayerLink.href = `https://www.youtube.com/watch?v=mvPlayer${mvId}`;
+      } else {
+        mvPlayerLink.href = "https://www.youtube.com/watch?v=n2cB4GVh_WU"; // Default MV Player
+      }
+
+      // Dynamically update Explore More link
+      const exploreMoreLink = document.getElementById("explore-more-link");
+      if (mvId) {
+        exploreMoreLink.href = `entry5.html?id=${mvId}`;
+      } else {
+        exploreMoreLink.href = "entry5.html"; // Default Explore More link
+      }
+    </script>
+  </body>
+</html>

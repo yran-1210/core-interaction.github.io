@@ -7,7 +7,7 @@ mainEntry.addEventListener("click", () => {
   mainEntry.style.backgroundColor = "white";
   mainEntry.style.border = "2px solid black";
   mainEntry.innerHTML = "Entering...";
-  
+
   // Redirect to entry1.html after a brief delay
   setTimeout(() => {
     window.location.href = "entry1.html"; // Redirect to entry1.html
