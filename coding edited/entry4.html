@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist Profile</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin-top: 30px;
+        color: white;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 50px;
+        justify-items: center;
+      }
+
+      .profile-link {
+        text-decoration: none;
+        color: white;
+        width: 200px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .profile-link:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+      }
+
+      .profile-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+      }
+
+      .profile-title {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 18px;
+        display: flex;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .back-button:hover {
+        color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+
+    <a href="entry1.html" class="back-button">Back</a>
+
+    <h1>Artist profile</h1>
+
+    <div class="grid-container">
+      <a href="profile1.html" class="profile-link">
+        <img src="assets6/084c609c3ae846068f4b8c2c18a9798b.jpg" alt="Profile 1" class="profile-image" />
+        <div class="profile-title">艾蜜莉 - 回春丹</div>
+      </a>
+
+      <a href="profile2.html" class="profile-link">
+        <img src="assets6/keshi.jpg" alt="Profile 2" class="profile-image" />
+        <div class="profile-title">Understand - keshi</div>
+      </a>
+
+      <a href="profile3.html" class="profile-link">
+        <img src="assets6/Screenshot 2024-12-03 at 9.30.16 AM.jpg" alt="Profile 3" class="profile-image" />
+        <div class="profile-title">My everything - James Park</div>
+      </a>
+
+      <a href="profile4.html" class="profile-link">
+        <img src="assets6/babychair.jpg" alt="Profile 4" class="profile-image" />
+        <div class="profile-title">Dear - babychair</div>
+      </a>
+
+      <a href="profile5.html" class="profile-link">
+        <img src="assets6/DPR IAN.jpg" alt="Profile 5" class="profile-image" />
+        <div class="profile-title">Scaredy Cat - DPR IAN</div>
+      </a>
+
+      <a href="profile6.html" class="profile-link">
+        <img src="assets6/The Charm Park.jpg" alt="Profile 6" class="profile-image" />
+        <div class="profile-title">昼寝 - The Charm Park</div>
+      </a>
+
+      <a href="profile7.html" class="profile-link">
+        <img src="assets6/the black skirt.jpg" alt="Profile 7" class="profile-image" />
+        <div class="profile-title">Everything - The Black Skirt</div>
+      </a>
+
+      <a href="profile8.html" class="profile-link">
+        <img src="assets6/Elliot Moss-slip2.jpeg" alt="Profile 8" class="profile-image" />
+        <div class="profile-title">Slip - Elliot Moss</div>
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entry 6</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: black;
+        color: white;
+        line-height: 1.6;
+      }
+
+      .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .back-button:hover {
+        color: #ddd;
+      }
+
+      .home-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .home-button:hover {
+        color: #ddd;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        margin: 100px auto 0;
+        padding: 20px;
+      }
+
+      .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-bottom: 80px;
+      }
+
+      .text-content {
+        width: 50%;
+        padding-right: 20px;
+      }
+
+      .image-content {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-content img {
+        max-width: 100%;
+        border-radius: 0px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .recommended-songs {
+        margin-top: 50px;
+      }
+
+      .recommended-songs ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .recommended-songs li {
+        margin-bottom: 15px;
+      }
+
+      .recommended-songs li strong {
+        color: #ffd700;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="entry1.html" class="home-button">Home</a>
+
+    <div class="container">
+      <div class="section">
+        <div class="text-content">
+          <h1>Baby Chair</h1>
+          <p>
+            Baby Chair is a rising indie band recognized for their unique blend
+            of alternative pop and dreamy melodies. Formed in 2018, the band
+            quickly gained attention for their heartfelt lyrics and innovative
+            soundscapes. Their music, deeply rooted in emotion and nostalgia,
+            resonates with listeners who appreciate introspective storytelling
+            paired with modern production. Baby Chair’s tracks often explore
+            themes of fleeting moments, love, and longing, creating a serene
+            atmosphere that captivates their audience.
+          </p>
+        </div>
+        <div class="image-content">
+          <img src="assets6/babychair.jpg" alt="Baby Chair Band" />
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="image-content">
+          <img src="assets6/babychair2.jpg" alt="Baby Chair Album" />
+        </div>
+        <div class="text-content recommended-songs">
+          <h2>Recommended Songs</h2>
+          <ul>
+            <li>
+              <strong>Dear</strong>: A hauntingly beautiful track reflecting on
+              the impermanence of love and heartbreak.
+            </li>
+            <li>
+              <strong>Fleeting Dreams</strong>: A serene melody that transports
+              listeners to a nostalgic dreamscape.
+            </li>
+            <li>
+              <strong>Take Me Home</strong>: A soulful ballad about finding
+              comfort and belonging in uncertain times.
+            </li>
+            <li>
+              <strong>Shadow Play</strong>: An experimental piece that combines
+              delicate vocals with atmospheric instrumentals.
+            </li>
+            <li>
+              <strong>Vanishing Light</strong>: A reflective track that captures
+              the bittersweet nature of fleeting moments.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
