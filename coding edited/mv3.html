@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Video Image</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .navigation {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+    .button {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    .button:hover {
+      color: #ccc;
+    }
+    .video-placeholder {
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      width: 100%; 
+      max-width: 900px; 
+      border-radius: 10px;
+    }
+    .video-placeholder:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
+    }
+    .fallback {
+      margin-top: 20px;
+      color: #ddd;
+      text-align: center;
+    }
+    .fallback a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .fallback a:hover {
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navigation">
+    <a href="mv.html" class="button">Back</a>
+  </div>
+
+  
+  <div>
+    <img 
+      src="assets-mv screenshot/myeverything.jpg" 
+      alt="Click to watch the video" 
+      class="video-placeholder"
+      onclick="window.open('https://www.youtube.com/watch?v=6zwwUoHUx-c', '_blank')" />
+  </div>
+
+
+  <div class="fallback">
+    if the mv doesn't work, plz click here：
+    <a href="https://www.youtube.com/watch?v=6zwwUoHUx-c" target="_blank">YouTube Website</a>
+  </div>
+</body>
+</html>
