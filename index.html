@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinyl Record Main Page</title>
+  <link rel="stylesheet" href="main-style.css" />
 </head>
 <body>
-    
+  <div class="container">
+
+    <div class="rotating-cd" id="rotating-cd">
+      <img src="cd-main.jpg" alt="CD" />
+    </div>
+
+
+    <a href="idea.html" class="entry entry1" id="explain-idea">EXPLAIN MY IDEA</a>
+    <a href="songlist.html" class="entry entry2" id="song-list">ALL THE SONG LIST AND SINGER</a>
+    <a href="webdesign.html" class="entry entry3" id="web-design">ADDITIONAL WEB DESIGN RECOMMENDED</a>
+    <a href="process.html" class="entry entry4" id="process">PROCESS</a>
+    <div class="main-entry" id="main-entry">CLICK TO ENTER</div>
+  </div>
+
+  <audio id="background-music" autoplay loop>
+    <source src="just-relax.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="main-script.js"></script>
 </body>
 </html>

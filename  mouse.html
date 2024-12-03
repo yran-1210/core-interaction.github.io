@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Cursor</title>
+  <style>
+    /* Internal CSS for the custom cursor */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+      cursor: none; /* Hide the default cursor */
+    }
+
+    .custom-cursor {
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: url('assets/music-cursor.png') no-repeat center center; /* Replace with your image path */
+      background-size: contain;
+      pointer-events: none; /* Ensure the cursor doesn't block clicks */
+      z-index: 1000; /* Ensure it appears above all other elements */
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <!-- Page Content -->
+  <h1>Welcome to the Custom Cursor Page</h1>
+
+  <script>
+    // JavaScript to move the custom cursor with the mouse
+    const customCursor = document.getElementById('customCursor');
+
+    document.addEventListener('mousemove', (event) => {
+      customCursor.style.left = `${event.pageX}px`;
+      customCursor.style.top = `${event.pageY}px`;
+    });
+  </script>
+</body>
+</html>
