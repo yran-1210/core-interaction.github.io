@@ -6,7 +6,7 @@
     <title>MV Page</title>
     <style>
       body {
-        margin: 20px; /* Add margin around the whole page */
+        margin: 20px; 
         padding: 0;
         background-color: #000000;
         font-family: Arial, sans-serif;
@@ -15,12 +15,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: calc(100vh - 40px); /* Account for margin in height */
+        height: calc(100vh - 40px); 
       }
       .navigation {
         position: fixed;
         top: 20px;
-        width: calc(100% - 40px); /* Account for body margin */
+        width: calc(100% - 40px); 
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
@@ -37,11 +37,11 @@
       }
       .content {
         text-align: center;
-        margin-top: 100px; /* Adjust spacing from navigation */
+        margin-top: 100px; 
       }
       .content a {
         display: block;
-        margin-top: 20px; /* Add spacing between the two links */
+        margin-top: 20px; 
         color: white;
         font-size: 18px;
         text-decoration: none;
@@ -53,28 +53,28 @@
     </style>
   </head>
   <body>
-    <!-- Navigation -->
+
     <div class="navigation">
       <a href="entry3.html?id=1">Back</a>
       <a href="entry1.html">Home</a>
     </div>
 
     <div class="content">
-      <!-- MV Player link -->
+  
       <a id="mv-player-link" href="#" target="_blank" style="font-size: 24px;">
         MV Player
       </a>
 
-      <!-- Explore More link -->
+
       <a id="explore-more-link" href="#">Explore More...</a>
     </div>
 
     <script>
-      // Get the query parameters from the URL
+
       const urlParams = new URLSearchParams(window.location.search);
       const mvId = urlParams.get("id");
 
-      // Dynamically update MV Player link
+      
       const mvPlayerLink = document.getElementById("mv-player-link");
       if (mvId) {
         mvPlayerLink.href = `https://www.youtube.com/watch?v=mvPlayer${mvId}`;
@@ -82,12 +82,12 @@
         mvPlayerLink.href = "https://www.youtube.com/watch?v=n2cB4GVh_WU&list=RDn2cB4GVh_WU&start_radio=1"; // Default MV Player
       }
 
-      // Dynamically update Explore More link
+
       const exploreMoreLink = document.getElementById("explore-more-link");
       if (mvId) {
         exploreMoreLink.href = `entry5.html?id=${mvId}`;
       } else {
-        exploreMoreLink.href = "entry5.html"; // Default Explore More link
+        exploreMoreLink.href = "entry5.html"; 
       }
     </script>
   </body>
