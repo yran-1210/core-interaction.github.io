@@ -1,4 +1,3 @@
-/* General Reset */
 body,
 html {
   margin: 0;
@@ -11,41 +10,38 @@ html {
   height: 100vh;
 }
 
-/* Container for Entries and Record */
 .container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Stack the elements vertically */
+  flex-direction: column;
   height: 100%;
 }
 
-/* Rotating Vinyl Record */
 .rotating-cd {
-  position: relative; /* Positioned relative to center */
-  width: 300px; /* Adjust as needed */
-  height: 300px; /* Adjust as needed */
+  position: relative;
+  width: 300px;
+  height: 300px;
   animation: spin 5s linear infinite;
-  z-index: 1; /* Keeps it under text */
-  margin-bottom: 50px; /* Add space below the record */
+  z-index: 1;
+  margin-bottom: 50px;
 }
 
 .rotating-cd img {
   width: 100%;
   height: 100%;
-  border-radius: 50%; /* Ensures a circular image */
+  border-radius: 50%;
 }
 
-/* Entry Links Styling */
 .entry {
   position: absolute;
   font-size: 18px;
   text-align: center;
-  text-decoration: none; /* Remove default underline */
-  color: white; /* Default color */
+  text-decoration: none;
+  color: white;
   cursor: pointer;
-  z-index: 2; /* Keeps text above spinning CD */
+  z-index: 2;
   transition: transform 0.2s ease, color 0.3s ease;
 }
 
@@ -60,10 +56,9 @@ html {
   font-size: 24px;
   cursor: pointer;
   z-index: 2;
-  margin-top: 20px; /* Adjust position above spinning CD */
+  margin-top: 20px;
 }
 
-/* Entry Specific Positions */
 .entry1 {
   position: absolute;
   top: 10%;
@@ -85,7 +80,6 @@ html {
   right: 20%;
 }
 
-/* Spinning Animation */
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -95,7 +89,6 @@ html {
   }
 }
 
-/* Prevent default blue color on click */
 .entry:active {
   color: gray;
 }

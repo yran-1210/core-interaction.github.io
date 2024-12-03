@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const itemWidth = 300 + 20; // Album width + gap
   const carouselWidth = itemWidth * items.length;
 
-  // Clone items for infinite scrolling
   items.forEach((item) => {
     const cloneStart = item.cloneNode(true);
     const cloneEnd = item.cloneNode(true);
@@ -12,25 +11,22 @@ document.addEventListener("DOMContentLoaded", function () {
     carousel.prepend(cloneEnd);
   });
 
-  // Set initial position
   let position = -carouselWidth;
   carousel.style.transform = `translateX(${position}px)`;
 
-  // Scroll function
   function scrollCarousel() {
-    position -= itemWidth / 2; // Adjust for smooth scrolling
+    position -= itemWidth / 2;
     carousel.style.transition = "transform 1.5s ease";
     carousel.style.transform = `translateX(${position}px)`;
 
-    // Reset for infinite loop
     setTimeout(() => {
       if (Math.abs(position) >= carouselWidth * 2) {
         position = -carouselWidth;
         carousel.style.transition = "none";
         carousel.style.transform = `translateX(${position}px)`;
       }
-    }, 1500); // Match transition duration
+    }, 1500);
   }
 
-  setInterval(scrollCarousel, 4000); // Scroll every 4 seconds
+  setInterval(scrollCarousel, 4000);
 });

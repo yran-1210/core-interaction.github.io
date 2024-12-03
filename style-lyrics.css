@@ -87,10 +87,10 @@ body {
 }
 
 .title {
-  position: fixed; /* Fix the title position */
-  top: 10px; /* Distance from the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Center alignment adjustment */
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   font-family: "Brush Script MT", cursive;
   font-size: 35px;
   color: rgb(250, 250, 250);

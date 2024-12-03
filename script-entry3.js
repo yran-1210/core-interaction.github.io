@@ -7,7 +7,6 @@ const slider = document.getElementById("music-slider");
 slider.value = 0;
 let isPlaying = false;
 
-// Set CD image and audio source from URL parameter
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const imgSrc = `assets3/cover${id}.jpg`;
